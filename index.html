@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="https:/echo.htmlacademy.ru" method="post">
+      <div class="amount">
+        <div class="from">
+          <label class="label" id="usdd" for="USD">From ⇊
+            <input class="input" type="number" id="USD" name="USD" placeholder="USD" required>
+          </label>
+
+          <label class="label" id="eur" for="EUR">
+            <input class="input" type="number" id="EUR" name="EUR" placeholder="EUR" required>
+          </label>
+        </div>
+
+        <button class="change1" type="button" id="change">⇄</button>
+
+        <div class="to">
+          <label class="label" id="uzss" for="UZS">To ⇊
+            <input class="input" type="number" id="UZS" name="UZS" placeholder="UZS" required>
+          </label>
+        </div>
+
+      </div>
+
+      <button class="btn" type="button" id="reset">Reset ↻</button>
+
+      <button class="btns" type="button" id="convert">Convert ⇋</button>
+    </form>
+
+    <p class="text" id="currency1">1 USD = <span id="currency">11400</span> UZS</p>
+    <p class="text1" id="currency1">1 EUR = <span id="uzs">12300</span> UZS</p>
+
+    <ol id="list">
+
+    </ol>
+  </div>
+
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>
